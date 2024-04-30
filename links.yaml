@@ -1,0 +1,16 @@
+index:
+  url: https://github.com/arma-events/ln
+  title: arma.events URL Aliases
+  description: Small service to create URL aliases for any URL.
+
+youtube:
+  url: https://www.youtube.com/@arma.events
+  title: arma.events on YouTube
+
+discord:
+  url: https://discord.gg/b2aABzh8xJ
+  title: arma.events on Discord
+
+twitter:
+  url: https://x.com/arma_events
+  title: arma.events on Twittwer
