@@ -1,4 +1,14 @@
-@use '@arma-events/web-fonts/dist/index.scss';
+@use '@arma-events/web-fonts/dist/index.scss' with (
+    $families: (
+        'Source Sans 3'
+    ),
+    $styles: (
+        'normal'
+    ),
+    $ranges: (
+        'latin'
+    )
+);
 
 :root {
     --font-body: 'Source Sans 3', 'Source Sans 3 Fallback', sans-serif;
