@@ -9,6 +9,38 @@
         <meta property="og:site_name" content="arma.events" />
         {{#if title}}<meta property="og:title" content="{{ title }}" />{{/if}}
         {{#if description}}<meta property="og:description" content="{{ description }}" />{{/if}}
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Source Sans 3', 'Source Sans 3 Fallback', sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                background-color: #dddbc3;
+                color: #0a0908;
+                overflow: hidden;
+            }
+
+            body {
+                display: grid;
+                place-content: center;
+                justify-items: center;
+                text-align: center;
+                inline-size: 100dvi;
+                block-size: 100dvb;
+            }
+
+            h1 {
+                font-weight: normal;
+            }
+
+            a {
+                font-weight: bold;
+                text-decoration: none;
+                color: #2e6499;
+            }
+        </style>
     </head>
     <body>
         <h1>If you're not redirected, please click <a href="{{url}}">here</a></h1>
