@@ -9,10 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@sinclair/typebox": "^0.34.52",
     "handlebars": "^4.7.10",
     "html-minifier-terser": "^7.2.0",
     "sass": "^1.105.1",
+    "typebox": "^1.3.36",
     "vite": "^8.3.4",
     "yaml": "^2.9.1"
   },

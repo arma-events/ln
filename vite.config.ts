@@ -5,12 +5,12 @@ import { defineConfig, preprocessCSS } from 'vite';
 import handlebars from 'handlebars';
 import { minify } from 'html-minifier-terser';
 import yaml from 'yaml';
-import { Type } from '@sinclair/typebox';
-import { TypeCompiler } from '@sinclair/typebox/compiler';
+import { Type } from 'typebox';
+import Schema from 'typebox/schema';
 
 const CONFIG = yaml.parse(await readFile('./links.yaml', 'utf-8'));
 
-const CONFIG_SCHEMA = TypeCompiler.Compile(
+const CONFIG_SCHEMA = Schema.Compile(
     Type.Record(
         Type.String(),
         Type.Object({
@@ -22,11 +22,11 @@ const CONFIG_SCHEMA = TypeCompiler.Compile(
 );
 
 if (!CONFIG_SCHEMA.Check(CONFIG)) {
-    const errors = Array.from(CONFIG_SCHEMA.Errors(CONFIG));
+    const [, errors] = CONFIG_SCHEMA.Errors(CONFIG);
 
     console.log(`Invalid Config (\x1b[31m${errors.length} errors\x1b[0m):`);
     for (const err of errors) {
-        console.error('    \x1b[33m%s\x1b[0m', err.message, 'at', '\x1b[90m' + err.path);
+        console.error('    \x1b[33m%s\x1b[0m', err.message, 'at', '\x1b[90m' + err.instancePath);
     }
 
     exit(1);
