@@ -9,14 +9,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@sinclair/typebox": "^0.32.34",
-    "handlebars": "^4.7.8",
+    "@sinclair/typebox": "^0.34.52",
+    "handlebars": "^4.7.10",
     "html-minifier-terser": "^7.2.0",
-    "sass": "^1.77.6",
-    "vite": "^6.4.1",
-    "yaml": "^2.4.5"
+    "sass": "^1.105.1",
+    "vite": "^8.3.4",
+    "yaml": "^2.9.1"
   },
   "dependencies": {
-    "@arma-events/web-fonts": "^1.1.1"
+    "@arma-events/web-fonts": "^1.2.2"
   }
 }
