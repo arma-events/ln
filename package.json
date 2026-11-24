@@ -11,9 +11,9 @@
   "devDependencies": {
     "handlebars": "^4.7.10",
     "html-minifier-terser": "^7.2.0",
-    "sass": "^1.108.1",
-    "typebox": "^1.4.5",
-    "vite": "^8.3.6",
+    "sass": "^1.108.2",
+    "typebox": "^1.4.7",
+    "vite": "^8.3.8",
     "yaml": "^2.9.1"
   },
   "dependencies": {
